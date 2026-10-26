@@ -2,10 +2,10 @@
 using namespace std;
 
 class One{       
-     public :	
+     private:	
 	 int x;	  
 	 
-     private:
+     public:
      void print( )	
 	 { cout << x << endl; }	
  }; 
@@ -13,7 +13,7 @@ class One{
 int main ( ) {
       One obj;    
       obj.x = 5 ;   
-      obj.print( ) ;  // What will happen?
+      obj.print( ) ;  
 
       return 0;
 
