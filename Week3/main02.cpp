@@ -2,15 +2,19 @@
 using namespace std;
 
 class One{       
-     public :	
-	 int x;	  
-	 void print( )	
-	 { cout << x << endl; }	
+private:	
+	 int x; 
+ public :
+	void print() { cout << x << endl; }	
+
+void getx(int value){
+	x=value;
+	}
  }; 
 
 int main ( ) {
       One obj;    
-      obj.x = 5 ;   
+	  obj.getx(5);
       obj.print( ) ;
 
       return 0;
