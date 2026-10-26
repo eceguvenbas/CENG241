@@ -3,10 +3,10 @@ using namespace std;
 
 void example(int* &p, double *q) {
     int newValue = 100;
+    p=new int(newValue);
     double newDouble = 200.5;
-
-    p = &newValue;     // Changes the original pointer
-    q = &newDouble;    // Changes only the local copy of the pointer
+    q=&newDouble;
+   
 }
 
 int main() {
@@ -20,6 +20,8 @@ int main() {
 
     cout << *a << endl;  // 100
     cout << *b << endl;  // 20.5
+    
+    delete a;
 
     return 0;
 }
