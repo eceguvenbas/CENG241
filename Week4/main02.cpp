@@ -4,14 +4,13 @@ using namespace std;
 class Point {
     int x, y;
 
-    public:
-    Point(int, int);
+public:
+    Point(int a, int b){
+    x=a;
+    y=b;}
+
     void display() {cout << "X: " << x << ", Y: " << y << endl;}
 };
-Point::Point(int a, int b) {
-    x = a;
-    y = b;
-}
 
 int main() {
     Point p(10, 20);
