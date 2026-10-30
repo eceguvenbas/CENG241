@@ -12,7 +12,8 @@ class Constructor {
 int main() {
     Constructor c1;
     Constructor c2;
-    c2 = Constructor();
+    Constructor temp;
+    c2=temp;
 
     return 0;
 }
