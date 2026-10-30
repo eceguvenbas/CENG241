@@ -5,19 +5,22 @@ class Lecturer {
     int courseID;
     string name;
 
-    public:
-    Lecturer();
-    Lecturer(int, string);
-    void display() {cout << "ID: " << courseID << ", Name: " << name << endl;}
+public:
+    Lecturer(){
+        courseID = 0;
+        name = "Unknown";
+    }
+
+    Lecturer(int i, string n) {
+        courseID = i;
+        name = n;
+    }
+
+    void display() {
+        cout << "ID: " << courseID
+             << ", Name: " << name << endl;
+    }
 };
-Lecturer::Lecturer() {
-    courseID = 0;
-    name = "Unknown";
-}
-Lecturer::Lecturer(int i, string n) {
-    courseID = i;
-    name = n;
-}
 
 int main() {
     Lecturer l1;
